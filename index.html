@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Verification</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #1e293b, #64748b);
+            font-family: 'Arial', sans-serif;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+            color: white;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .container h1 {
+            font-size: 3rem;
+            background: linear-gradient(90deg, #38bdf8, #9333ea);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: gradientMove 3s infinite linear;
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.7);
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes gradientMove {
+            0% {
+                background-position: 0% 50%;
+            }
+            100% {
+                background-position: 100% 50%;
+            }
+        }
+
+        .container h1 {
+            background-size: 200% 200%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Du wurdest Erfolgreich Verifiziert auf Gaming Server</h1>
+    </div>
+    <div class="footer">
+        Made by Arvin
+    </div>
+</body>
+</html>
